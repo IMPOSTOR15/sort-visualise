@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    background-color: #272c33;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 20vw;
+}
+.option-card {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: #3b424d;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.sort-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: #3b424d;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.visualization {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    justify-content: start;
+    align-items: flex-end;
+}
+.visualization div {
+    vertical-align: bottom;
+    text-align: initial;
+    display: flex;
+    color: #fff;
+    padding: 0 5px;
+    background-color: rgb(52, 52, 150);
+    justify-content: center;
+    min-width: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+    align-items: flex-end;
+    border: 1px solid #ccc;
+    transition: height 0.5s;
+}
+
+.input-lable {
+    color: #fff;
+}
+.array-text {
+    resize: vertical;
+    height: auto;
+    min-height: 50px;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+.select-sort-method {
+    outline: none;
+    border: 2px solid #fff;
+    background-color: #3b424d;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+.range-caption {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 10px 10px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    min-width: 200px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button_main:hover {
+    background-color: #ffffff2c;
+}
+.btn-icon {
+    height: 30px;
+    width: 30px;
+}
+.visualization-header, .sort-status-text {
+    color: #fff;
+    margin: 5px 0;
+    text-align: center;
+}
+.visualization div span {
+    margin: auto 0 0 0;
+    line-height: 1;
+}

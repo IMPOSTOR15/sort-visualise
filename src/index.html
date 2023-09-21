@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуализация сортировки</title>
+</head>
+<body>
+    <main class="main">
+        <div class="option-card">
+            <label class="input-lable" for="array-input">Массив для сортировки</label>
+            <textarea id="arrayInput" class="array-text" placeholder="Введите массив чисел через запятую">1,20,16,14,18,14,12,10,29,24,18,25,34,12,7,34,19,68,12,43,20,16,14,18,14,12,10,29,24,18,25,34,12,7,34,19,68,12,43</textarea>
+            <label class="input-lable" for="sort-method">Метод сортировки</label>
+            <select class="select-sort-method" id="sortMethod">
+                <option value="bubble">Сортировка пузырьком</option>
+                <option value="selection">Сортировка выбором</option>
+                <option value="insertion">Сортировка вставками</option>
+                <option value="quick">Быстрая сортировка</option>
+                <option value="merge">Сортировка слиянием</option>
+                <option value="heap">Пирамидальная сортировка (Сортировка кучей)</option>
+            </select>
+            <label class="input-lable" for="sortSpeed">Скорость сортировки</label>
+            <input id="sortSpeed" type="range" min="100" max="2000">
+            <div class="range-caption">
+                <span class="range-caption-element">100</span>
+                <span class="range-caption-element">565</span>
+                <span class="range-caption-element">1024</span>
+                <span class="range-caption-element">1500</span>
+                <span class="range-caption-element">2000</span>
+            </div>
+            <div class="button-row">
+                <button class="button_main" id="startSort">
+                    <img class="btn-icon" id="startIcon" src="<%=require('../src/assets/icons/sort.svg')%>" alt="">
+                    <img class="btn-icon" id="stopIcon" style="display: none;" src="<%=require('../src/assets/icons/stop.svg')%>" alt="">
+                    <span id="startBtnText">Начать сортировку</span>
+                </button>
+                <button class="button_main" id="pauseSort" style="display: none;">
+                    <img class="btn-icon" id="pauseIcon" src="<%=require('../src/assets/icons/pause.svg')%>" alt="">
+                    <img class="btn-icon" id="playIcon" style="display: none;" src="<%=require('../src/assets/icons/play.svg')%>" alt="">
+                    <span id="pauseBtnText">Пауза</span>
+                </button>
+            </div>
+            
+        </div>
+        <div class="sort-card">
+            <h2 class="visualization-header">Визуализация</h2>
+            <div class="visualization" id="visualization"></div>
+            <p class="sort-status-text" id="sortStatus"></p>
+        </div>
+    </main>
+</body>
+</html>
